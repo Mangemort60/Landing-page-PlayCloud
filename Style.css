@@ -47,6 +47,9 @@ header li {
     font-size: 1.5rem;
     cursor: pointer;
 }
+header li:hover {
+    color: var(--dark-red);
+}
 
 .header.buttons button {
     font-size: 1.5rem;
@@ -121,10 +124,20 @@ header li {
     border-radius: 6px;
 }
 
+.home.buttons li:first-child:hover {
+    background: #2697759f;
+}
+
+
 .home.buttons li:nth-child(2) {
     background: black;
     cursor: pointer;
     border-radius: 6px;
+
+}
+.home.buttons li:nth-child(2):hover {
+    background: rgba(0, 0, 0, 0.616);
+
 
 }
 
