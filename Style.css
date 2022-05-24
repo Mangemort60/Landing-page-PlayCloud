@@ -28,7 +28,19 @@ header {
     background-color: var(--verydark-gray);
     color: white;
     position: sticky;
+    z-index: 1;
     top: 0px
+}
+
+@media screen and (max-width:1000px) {
+    nav {
+        display: none;
+    }
+
+    div.header.buttons ul {
+        display: flex;
+    }
+    
 }
 
 header h1 {
@@ -36,6 +48,7 @@ header h1 {
     padding-left: 14px;
     cursor: pointer;
 }
+
 
 header span {
     color: var(--dark-red)
@@ -47,6 +60,7 @@ header li {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
 header li:hover {
     color: var(--dark-red);
 }
@@ -101,6 +115,7 @@ header li:hover {
 
 }
 
+
 .home.buttons ul {
 
     font-size: 2rem;
@@ -135,6 +150,7 @@ header li:hover {
     border-radius: 6px;
 
 }
+
 .home.buttons li:nth-child(2):hover {
     background: rgba(0, 0, 0, 0.616);
 
@@ -149,6 +165,28 @@ header li:hover {
 
 }
 
+@media screen and (max-width:900px) {
+    .controller img {
+        display: none;
+
+
+    }
+
+    .pickupLine {
+        background-color: var(--verydark-gray);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+
+    }
+
+
+}
+
 /* ****SERVICE DETAILS****  */
 
 .details {
@@ -156,6 +194,17 @@ header li:hover {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(7, 1fr);
     height: auto;
+}
+
+@media screen and (max-width:900px) {
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    
 }
 
 .details img {
@@ -222,6 +271,20 @@ header li:hover {
     background-color: #ECECEC;
     padding: 100px;
 
+
+}
+
+@media screen and (max-width: 900px) {
+    .pricingPlan {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #ECECEC;
+        padding: 100px;
+
+
+
+    }
 
 }
 
